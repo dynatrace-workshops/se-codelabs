@@ -58,30 +58,34 @@ $color-kubernetes-blue: #326ce5;
 /* Actual CSS classes */
 
 @include codelab-card(['cloud'], $color-dynatrace-blue, 'cloud-royalblue_500.svg');
+
+@include codelab-card(['easytravel'], $color-dynatrace-orange, 'favicon_easytravel.ico');
+
 @include codelab-card(['kubernetes'], $color-dynatrace-blue, 'kubernetes.svg');
 
+@include codelab-card(['autonomous-cloud'], $color-dynatrace-blue, 'keptn.png');
 
-@include codelab-card(['autonomous-cloud'], #455a64, 'keptn.png');
+@include codelab-card(['keptn'], $color-dynatrace-blue, 'keptn.png');
 
-@include codelab-card(['kubernetes'], #455a64, 'kubernetes.png');
+@include codelab-card(['kubernetes'], $color-dynatrace-blue, 'kubernetes.png');
 
-@include codelab-card(['kubernetes-gke'], #455a64, 'cloud-platform.svg');
+@include codelab-card(['kubernetes-gke'],$color-dynatrace-blue, 'cloud-platform.svg');
 
-@include codelab-card(['bizops'], #455a64, 'bizops.svg');
+@include codelab-card(['bizops'], $color-dynatrace-logo-green, 'bizops.svg');
 
-@include codelab-card(['adv-obs'], #455a64, 'adv-obs.svg');
+@include codelab-card(['adv-obs'], $color-dynatrace-blue, 'adv-obs.svg');
 
-@include codelab-card(['dem'], #455a64, 'dem.svg');
+@include codelab-card(['dem'], $color-dynatrace-logo-purple, 'dem.svg');
 
-@include codelab-card(['azure'], #455a64, 'azure.svg');
+@include codelab-card(['azure'], $color-dynatrace-blue, 'azure.svg');
 
-@include codelab-card(['istio'], #455a64, 'istio.svg');
+@include codelab-card(['istio'], $color-dynatrace-blue, 'istio.svg');
 
-@include codelab-card(['infra'], #455a64, 'metric-tree.svg');
+@include codelab-card(['infra'], $color-dynatrace-blue, 'metric-tree.svg');
 
-@include codelab-card(['automate-feedback'], #455a64, 'perf-scale.svg');
+@include codelab-card(['automate-feedback'], $color-dynatrace-blue, 'perf-scale.svg');
 
-@include codelab-card(['automate-delivery'], #455a64, 'traffic-light.svg');
+@include codelab-card(['automate-delivery'], $color-dynatrace-blue, 'traffic-light.svg');
 
-@include codelab-card(['automate-operations'], #455a64, 'health-status.svg');
+@include codelab-card(['automate-operations'], $color-dynatrace-blue, 'health-status.svg');
 

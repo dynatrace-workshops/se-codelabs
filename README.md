@@ -1,6 +1,6 @@
-# Dynatrace Klagenfurt onboarding codelabs
+# Dynatrace Sales Engineering codelabs
 
-A site for hosting Dynatrace Klagenfurt onboarding codelabs.
+A site for hosting Dynatrace Sales Engineering codelabs.
 Adapted from [google code labs](https://github.com/googlecodelabs/tools/tree/master/site)
 
 ## Create a tutorial
