@@ -22,3 +22,4 @@ app/js/bundle
 !/codelabs/markdown
 /.idea/
 
+.DS_Store
