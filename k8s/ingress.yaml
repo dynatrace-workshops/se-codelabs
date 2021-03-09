@@ -1,0 +1,13 @@
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: klu-codelabs
+  namespace: klu-codelabs
+spec:
+  rules:
+    - host: klu-codelabs.apps.lab.dynatrace.org
+      http:
+        paths:
+          - backend:
+              serviceName: klu-codelabs
+              servicePort: 80
