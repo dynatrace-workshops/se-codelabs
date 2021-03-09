@@ -179,7 +179,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
           {% if codelab.status.indexOf('hidden') === -1 || view.id !== 'default' %}
             {% set cat = levelledCategory(codelab, view.catLevel) %}
             <a href="{{codelabUrl(view, codelab)}}" on-tap="navigate"
-               class="codelab-card category-{{codelab.authors.replace('.','-')}}"
+               class="codelab-card category-{{categoryClass(codelab, cat.level)}}"
                data-category="{{codelab.category}}"
                data-title="{{codelab.title}}"
                data-duration="{{codelab.duration}}"
@@ -195,8 +195,8 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
                 <span>{%- if codelab.updated -%}Updated {{codePrettyDate(codelab.updated)}}{%- endif -%}</span>
               </div>
               <div class="card-footer">
-                <div class="category-icon {{codelab.authors.replace('.','-')}}-icon"></div>
-                <paper-button class="{{codelab.authors.replace('.','-')}}-bg">Start</paper-button>
+                <div class="category-icon {{categoryClass(codelab, cat.level)}}-icon"></div>
+                <paper-button class="{{categoryClass(codelab, cat.level)}}-bg">Start</paper-button>
               </div>
             </a>
           {%- endif %}

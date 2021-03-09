@@ -19,7 +19,7 @@
 
 $card-width: 330px;
 $card-row-height: 250px; // normal mode
-$card-col-height: 200px; // column modec
+$card-col-height: 200px; // column mode
 
 $card-default-color-scheme: $color-dynatrace-blue;
 
@@ -36,12 +36,11 @@ $card-default-color-scheme: $color-dynatrace-blue;
   flex-direction: column;
   flex: 1 0 $card-width;
   margin: 0 $keyline * 2 $keyline * 2 0;
-  //background-color: #fff;
-  background-color: rgba(255, 255, 255, 0.1)!important;
+  background-color: $blueGrey50;
   max-width: $card-width;
   border-radius: $radius;
-  border: 1px solid rgba(255,255,255,.25);
-  border-bottom: 2px solid transparent;
+  border: 1px solid $card-default-color-scheme;
+  border-bottom: 2px solid $card-default-color-scheme;
 
   &:nth-of-type(3n) {
     margin-right: 0;
@@ -61,7 +60,7 @@ $card-default-color-scheme: $color-dynatrace-blue;
   .card-duration {
     display: flex;
     align-items: center;
-    color: #8f96a0;
+    color: #aaaaaa;
     font-size: 11px;
     padding: 0 $keyline * 2;
     mix-blend-mode: initial;
@@ -75,7 +74,7 @@ $card-default-color-scheme: $color-dynatrace-blue;
   .card-author,
   .card-updated {
     font-size: 12px;
-    color: #8f96a0;
+    color: $grey400;
     line-height: 16px;
     text-align: right;
   }
@@ -83,8 +82,7 @@ $card-default-color-scheme: $color-dynatrace-blue;
   .description {
     padding: $keyline * 2 $keyline * 2 0 $keyline * 2;
     flex: 1 0 auto;
-    //color: #212121;
-    color: #f9f9f9;
+    color: #212121;
     -webkit-font-smoothing: antialiased;
   }
 }
@@ -105,7 +103,7 @@ $card-default-color-scheme: $color-dynatrace-blue;
   }
 
   .category-icon {
-    background-image: url('/images/icons/dynatrace-white.svg');
+    background-image: url('/images/icons/dynatrace-gray_900.svg');
     width: 42px;
     height: 42px;
     background-size: 32px;
